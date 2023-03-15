@@ -1,13 +1,222 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="tr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Bootstrap demo</title>
-    <link href="assets/css/style.css" rel="stylesheet">
-  </head>
-  <body>
-    <h1>Hello, world!</h1>
-    <script src="assets/js/script.js"></script>
-  </body>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tailwind demo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+  <header
+    class="w-full h-[100px]  md:h-[400px] lg:h-[400px] bg-[url('/assets/img/common/header.png')] bg-no-repeat bg-cover bg-bottom">
+    <div class="container px-4 h-[90px] mx-auto flex justify-between items-center">
+      <!-- Logo Here -->
+      <a class="w-3/4 md:w-1/4" href="#"><img src="assets/img/common/logo.png" alt="Dostext Logo" />
+      </a>
+      <!-- Menu links here -->
+      <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-200 z-50 text-l duration-200
+          md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+        <li class="md:hidden z-90 fixed top-4 right-6">
+          <a href="javascript:void(0)" class="text-right text-[#f06d62] text-4xl" onclick="toggleMenu()">&times;</a>
+        </li>
+
+        <li>
+          <a class="text-black hover:text-[#f06d62] hover:opacity-100 duration-300" href="#">Anasayfa</a>
+        </li>
+        <li>
+          <a class="text-black hover:text-[#f06d62] hover:opacity-100 duration-300" href="#">Hakkımızda</a>
+        </li>
+        <li>
+          <a class="text-black hover:text-[#f06d62] hover:opacity-100 duration-300" href="#">Ekibimiz</a>
+        </li>
+      </ul>
+
+      <!-- This is used to open the menu on mobile devices -->
+      <div class="flex items-center md:hidden">
+        <button class="text-[#f06d62] text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+          onclick="toggleMenu()">
+          &#9776;
+        </button>
+      </div>
+  </header>
+  <div class="w-full flex justify-end h-20 -mt-10 md:h-96 md:-mt-72">
+    <img src="assets/img/common/right-dot.png" class="" />
+  </div>
+  <main>
+    <div class="flex justify-center md:-mt-52">
+      <div class="w-full">
+        <div class="flex justify-center">
+          <div class="w-1/2">
+            <img src="assets/img/common/logo.png" alt="Hero" />
+          </div>
+        </div>
+        <div class="flex justify-center">
+          <div class="w-1/6">
+            <a href="#"><img src="assets/img/common/join-us.png" alt="Hero" /></a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+    <img src="assets/img/common/content-start.png" class="w-full" />
+    <div class="bg-[#f8bcba] flex-row">
+      <div class="grid grid-cols-3 gap-4 justify-center space-x-1-12 mx-10 py-10">
+
+        <div class="col-span-12 text-center items-center md:col-span-1">
+          <img src="assets/img/common/project-title.png" class="mb-10 w-52 mx-auto">
+          <p>
+            Bu aşamada elektronik dünyada var olan bütün yazıları ve sesleri onların anadili olan işaret diline
+            çeviriyoruz.Onların elektronik dünyada kolayca dolaşabilmesini sağlayacak ve güncel haberlerden,
+            gelişmelerden haberdar olmalarını sağlayacağız.Video ve yazılı kaynaklardan, kendilerini
+            geliştirebilmelerinin önünü açmayı hedefliyoruz.
+          </p>
+        </div>
+        <div class="col-span-12 text-center items-center md:col-span-1">
+          <img src="assets/img/common/project-title.png" class="mb-10 w-52 mx-auto">
+          <p>
+            Bu adımda daha önce çalışma yapılmamış. Metaverse’e doğru giden bir dünyada 500 milyon insandan bağımsız bir
+            gelişme düşünülemez.
+            1.0 ile ortamdaki ses ya da yazıları işaret diline çevirirken, 2.0 ile kişilerin hareketlerini metin/ses’e
+            çeviriyoruz.
+          </p>
+        </div>
+        <div class="col-span-12 text-center items-center md:col-span-1">
+          <img src="assets/img/common/project-title.png" class="mb-10 w-52 mx-auto">
+          <p>
+            Bu aşamada ise işitme engelli bireylerin hareketlerini anlamlı hale getiren yazılım ve donanımlarla onların
+            işaret dili olan konuşmalarını, işitme engeli olmayan bireyler için ses ve yazıya dönüştürerek karşılıklı
+            olması gereken iletişimi kurmuş olacağız.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <img src="assets/img/common/content-end.png" class="w-full" />
+
+  <div class="grid grid-cols-3 gap-4 justify-center mx-10 py-10">
+    <div class="col-span-12 text-center items-center md:col-span-1 mx-auto">
+      <img src="assets/img/common/our-difference.png" class="max-h-96" alt="Hero" />
+      <p>
+        Türkiye’de 4.5 milyon, Dünya’da 500 milyon insanın kaderini bir sosyal sorumluluk çerçevesinde çözemeyeceğimizi biliyoruz.
+Sosyal sorumluluk yapıp, sizi anlıyoruz, sizi biliyoruz demek bir çözüm üretmiyor ne yazık ki!
+Bu sebeple diyoruz ki; GELDİK!
+
+Sorunun bizzat kendisinin muhatabıyız ve çözmeden de hiçbir yere gitmiyoruz!
+
+Bütün imkanlarımızı seferber ettik ve bu proje başarıya ulaşana kadar da vazgeçmeyeceğiz.
+
+Bu girişimi başarılı olarak sonuçlandırmak sadece bizim ekibimizin değil 500 milyon kişinin umudu ve 500 milyon kişinin umudu, sosyal sorumlulukla garantiye alınamaz!
+      </p>
+    </div>
+    <div class="col-span-12 text-center items-center md:col-span-1 mx-auto">
+      <div class="grid grid-cols-2">
+        <div class="col-span-1/2">
+          <img src="assets/img/head/head-1.png" class="h-48" alt="Hero" />
+          <img src="assets/img/head/head-2.png" class="h-48" alt="Hero" />
+        </div>
+        <div class="col-span-1/2">
+          <img src="assets/img/head/head-3.png" class="h-48" alt="Hero" />
+          <img src="assets/img/head/head-4.png" class="h-48" alt="Hero" />
+        </div>
+      </div>
+    </div>
+    <div class="col-span-12 text-center items-center md:col-span-1 mx-auto">
+      <img src="assets/img/common/our-mission.png" class="h-96" alt="Hero" />
+      <p>
+        Mevcut işaret dili çalışmalarının sanal ortamla etkileşimini sağlayarak.
+
+Sesli konuşmaları algoritmamızın tanıyıp, ilgili hareketi tanımlamış olduğumuz animasyon karakterimizin oynatmasını sağlayarak.
+
+Aynı şekilde yapılan işaret dili hareketlerini de anlamlı metin/ses’e çevirerek.
+Bu animasyonları görüntü işleme, giyilebilen teknolojiler ve animasyon oluşturma programlarıyla elde etmeyi planlıyoruz ve hareketleri anlamlandırmak için ise uygun yazılım ve gelişen teknolojiyi kullanıyoruz.
+Meta da olsa bir evren kuruluyorsa, orada insan nüfusunun %10’u görmezden gelinemez ve soyutlanamaz. Bütün platform ve koşullarda, en doğal hak olan eşitliği ve adaleti sağlayacağız.
+      </p>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-3 gap-3 justify-center mx-auto py-auto">
+
+    <div class="col-span-12 text-center items-center md:col-span-1 mx-auto">
+      <div class="grid grid-cols-2">
+        <div class="col-span-1/2">
+          <img src="assets/img/head/head-1.png" class="h-48" alt="Hero" />
+          <img src="assets/img/head/head-2.png" class="h-48" alt="Hero" />
+        </div>
+        <div class="col-span-1/2">
+          <img src="assets/img/head/head-3.png" class="h-48" alt="Hero" />
+          <img src="assets/img/head/head-4.png" class="h-48" alt="Hero" />
+        </div>
+      </div>
+    </div>
+
+    <div class="col-span-12 md:col-span-1 mx-auto">
+      <img src="assets/img/common/how-we-work.png" class="h-96" alt="Hero" />
+      <img src="assets/img/common/bottom-arrow.png" class="h-96 -mt-36" alt="Hero" />
+    </div>
+
+    <div class="col-span-12 text-center items-center md:col-span-1 mx-auto">
+      <div class="grid grid-cols-2">
+        <div class="col-span-1/2">
+          <img src="assets/img/head/head-1.png" class="h-48" alt="Hero" />
+          <img src="assets/img/head/head-2.png" class="h-48" alt="Hero" />
+        </div>
+        <div class="col-span-1/2">
+          <img src="assets/img/head/head-3.png" class="h-48" alt="Hero" />
+          <img src="assets/img/head/head-4.png" class="h-48" alt="Hero" />
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="grid grid-cols-1 justify-center mx-auto  md:top-0 md:mx-40">
+    <div class="col-span-12 text-center items-center md:col-span-1 mx-auto">
+      <p>
+        Ses algılama süzgecinden geçen data; belirlediği animasyon dosyasına gidip, oluşturduğumuz model üzerinde
+        hareketi oluşturacak.Ekranların sağ alt yanında animasyonumuz diğer kullanıcıları da rahatsız etmeden, isteğe
+        özel kapatılabilen alanında başkaları için ses olacak. Metaverse ya da iş simülasyonlarında bireylerin isteğe
+        bağlı bir işaret dili çevirmeni imkanı da olmuş oluyor. Bu kişiyi diğer kullanıcılardan gizleme seçeneği de
+        bulunmakta ya da birey ister ise bir eklenti ile, bütün ses ve metinleri işaret dilinde görebiliyor. Bir işitme
+        engelli kullanıcının dünyasında herkes işaret dili biliyor gibi bir kurgu.
+      </p>
+    </div>
+  </div>
+  <footer class="h-auto w-full mt-20 ">
+    <img src="assets/img/common/footer.png" class="w-full">
+    <div class="pt-20 bg-[#2c7c95]">
+      <div class="grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 lg:gap-8 md:pl-36 md:pr-36">
+        <div class="p-4 rounded-md flex items-center justify-center"> 
+          <img src="assets/img/sm/fb.png" class="">
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center"> 
+          <img src="assets/img/sm/tw.png" class="">
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center"> 
+          <img src="assets/img/sm/ig.png" class="">
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center"> 
+          <img src="assets/img/sm/ln.png" class="">
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center"> 
+          <img src="assets/img/sm/dc.png" class="">
+        </div>
+      </div>
+
+      <img src="assets/img/common/footer-end.png" class="w-full">
+    </div>
+  </footer>
+  <script src="assets/js/tailwind.config.js"></script>
+  <script>
+    var menu = document.getElementById('menu');
+    function toggleMenu() {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('h-screen');
+    }
+  </script>
+</body>
+
 </html>
