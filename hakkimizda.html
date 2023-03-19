@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dostext | #bizgeldik</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header
+    class="w-full h-[100px]  md:h-[400px] lg:h-[400px] bg-[url('assets/img/common/header.png')] bg-no-repeat bg-cover bg-bottom">
+    <div class="container px-4 h-[90px] mx-auto flex justify-between items-center">
+      <!-- Logo Here -->
+      <a class="w-2/4 md:w-1/4" href="#"><img src="assets/img/common/logo.png" alt="Dostext Logo" />
+      </a>
+      <!-- Menu links here -->
+      <ul id="menu" class="hidden fixed top-0 right-0 px-10 py-16 bg-gray-200 z-50 text-l duration-200
+          md:relative md:flex md:p-0 md:bg-transparent md:flex-row md:space-x-6">
+
+        <li class="md:hidden z-90 fixed top-4 right-6">
+          <a href="javascript:void(0)" class="text-right text-[#f06d62] text-4xl" onclick="toggleMenu()">&times;</a>
+        </li>
+
+        <li>
+          <a class="text-black hover:text-[#f06d62] hover:opacity-100 duration-300" href="index.html">Anasayfa</a>
+        </li>
+        <li>
+          <a class="text-black hover:text-[#f06d62] hover:opacity-100 duration-300" href="#">Hakkımızda</a>
+        </li>
+        <li>
+          <a class="text-black hover:text-[#f06d62] hover:opacity-100 duration-300" href="#">Ekibimiz</a>
+        </li>
+      </ul>
+
+      <!-- This is used to open the menu on mobile devices -->
+      <div class="flex items-center md:hidden">
+        <button class="text-[#f06d62] text-4xl font-bold opacity-70 hover:opacity-100 duration-300"
+          onclick="toggleMenu()">
+          &#9776;
+        </button>
+      </div>
+  </header>
+  <div class="w-full flex justify-end h-20 -mt-10 md:h-96 md:-mt-72">
+    <img src="assets/img/common/right-dot.png" class="" />
+  </div>
+  <main>
+    <div class="flex-row">
+      <div class="grid grid-cols-1 gap-4 justify-center space-x-1-12 mx-10 py-10">
+
+        <div class="col-span-1 text-center items-center md:col-span-1">
+          <h1 class="heading-title text-6xl text-[#f26e63]">
+            Projemiz Hakkında
+          </h1>
+          <p class="mt-10 md:mx-20">
+            İşitme engellilerin bağımsız ve eşit şekilde hayata katılımını sağlamak istiyoruz. Bu nedenle internet
+            sitelerinden, online gazetelere kadar her alanda ekranın alt köşesinde onların yanında olacağız.
+
+          </p>
+        </div>
+        <div class="col-span-1 text-center items-center md:col-span-1">
+          <h1 class="heading-title text-4xl text-[#f26e63]">
+            Ne Yapıyoruz?
+          </h1>
+          <p class="mt-10 md:mx-20">
+            Tüm işitme engellilere ‘kulak vermeye’, onların sesi olmaya çalışan DosText günümüz teknolojisini en etkili
+            şekilde kullanıp işitme engelli bireyler için hayatı kolaylaştırıcı, parlak bir çözüm ortaya koyuyor.
+            Dostext gerçek hayattaki işaret dili çalışmalarını dijitale aktararak işitme engelli bireyler için her an
+            her yerde kolaylıkla anlaşabilme ve anlaşılabilme ihtiyaçlarına benzersiz bir çözüm sunuyor. Animasyon
+            karakterler alınan veriyi işaret dilinde canlandırıyor ve tam tersi şekilde hareketleri de metin veya sese
+            çevirebiliyor. Bilinenin aksine işitme engelli bireyler ile iletişime geçmek için yazılı iletişim pek
+            sağlıklı bir yöntem değil. İşitme engelli bireyler işaret dilinin dilbilgisi ve yapısı Türkçe’den farklı
+            olduğundan çoğu zaman okumakta ve anlamakta zorluk çekiyorlar. Bu nedenle işitme engellilere özel olan
+            işaret dilinin tıpkı online çeviri uygulamaları gibi Türkçeye çeviren ve tam tersini de yapabilen bir
+            uygulama gibi de düşünülebilir. Bu uygulama ile işitme engellilerle sınırsız bir iletişim sağlanabiliyor.
+          </p>
+        </div>
+        <div class="col-span-1 text-center items-center md:col-span-1">
+          <h1 class="heading-title text-4xl text-[#f26e63]">
+            Nasıl Çalışacak?
+          </h1>
+          <p class="mt-10 md:mx-20">
+            Bu aşamada ise işitme engelli bireylerin hareketlerini anlamlı hale getiren yazılım ve donanımlarla onların
+            işaret dili olan konuşmalarını, işitme engeli olmayan bireyler için ses ve yazıya dönüştürerek karşılıklı
+            olması gereken iletişimi kurmuş olacağız.
+          </p>
+        </div>
+        <div class="col-span-1 text-center items-center md:col-span-1">
+          <h1 class="heading-title text-4xl text-[#f26e63]">
+            Animasyonlar
+          </h1>
+          <p class="mt-10 md:mx-20">
+            Göze estetik gelen ve sanal alemde varlığımızı temsilen kullanılabilen animasyonlar Dostext projesinde
+            işaret dilini sergilemek için yaratılacak! Animasyonlarda görüntü işleme, giyilebilen teknolojiler ve
+            animasyon oluşturma programları kullanılacak. Hareketler derinlik kameraları ve telefon kameraları ile
+            anlaşılınca, uygun yazılım programları ile anlamlandırılacak ve kullanıcıya sunulacak. Bu animasyonların
+            stüdyoda işaret dili eğitmenleri veya işitme engelli bireylerle çalışmalar yapılıp, derin öğrenme
+            aracılığıyla vücutlarında önceden belirlenen noktaların vektörleri elde edilerek oluşturulması planlanıyor.
+            İşaret dili eğitmenleri stüdyoda giyilebilir teknolojiler giyecek. Bu teknolojiler sayesinde, derin öğrenme
+            ile, hareketlerin vektörleri elde edilecek. Her hareketin animasyon modeli Unity gibi programlar ile
+            üretilecek.
+
+
+          </p>
+        </div>
+        <div class="col-span-1 text-center items-center md:col-span-1">
+          <h1 class="heading-title text-4xl text-[#f26e63]">
+            Farkımız
+          </h1>
+          <p class="mt-10 md:mx-20">
+            Bu alanda söylenen veya yazılan kelimelerin animasyona dönüştürüldüğü çalışmalar olsa da yetersizler. Şu
+            anda mevcut eylemler resim, video ve çok az sayıda animasyon ile yapılmış. Dostext ise doğrudan işitme
+            engelli bireylerin anladığı ses olmayı amaçlıyor. Hali hazırdaki çalışmaların çoğunda proje sonunda
+            süreklilik sağlanamıyor. Dostext bu sürekliliği ve etkinliği sağlamak için gerekirse kelimelere eklemeler
+            yapacak ve zaman ilerledikçe, kullanıcı sayısı arttıkça kendini geliştirecek. DosText deneyimi zaman
+            ilerledikçe daha da iyileşecek. Algoritma kullanıcı sayısı artıkça dünyanın her noktasından farklı
+            ortamlardan, farklı koşullardan aldığı verilerle gün geçtikçe daha çok öğrenecek.
+          </p>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer class="h-auto w-full mt-20 ">
+    <img src="assets/img/common/footer.png" class="w-full">
+    <div class="pt-20 bg-[#2c7c95]">
+      <div class="grid grid-cols-5 md:grid-cols-5 lg:grid-cols-5 gap-4 lg:gap-8 md:pl-36 md:pr-36">
+        <div class="p-4 rounded-md flex items-center justify-center">
+          <a target="_blank" href="https://www.facebook.com/groups/1023086741043071"><img src="assets/img/sm/fb.png"
+              class=""></a>
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center">
+          <a target="_blank" href="https://twitter.com/Dostextt"><img src="assets/img/sm/tw.png" class=""></a>
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center">
+          <a target="_blank" href="https://www.instagram.com/dostextt/"><img src="assets/img/sm/ig.png" class=""></a>
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center">
+          <a target="_blank" href="https://www.linkedin.com/company/dostextt/"><img src="assets/img/sm/ln.png"
+              class=""></a>
+        </div>
+        <div class="p-4 rounded-md flex items-center justify-center">
+          <a target="_blank" href="https://discord.com/invite/nMdtyhDCr8"><img src="assets/img/sm/dc.png" class=""></a>
+        </div>
+      </div>
+
+      <img src="assets/img/common/footer-end.png" class="w-full">
+    </div>
+  </footer>
+  <script src="assets/js/tailwind.config.js"></script>
+  <script>
+    var menu = document.getElementById('menu');
+    function toggleMenu() {
+      menu.classList.toggle('hidden');
+      menu.classList.toggle('w-full');
+      menu.classList.toggle('h-screen');
+    }
+  </script>
+</body>
+
+</html>
